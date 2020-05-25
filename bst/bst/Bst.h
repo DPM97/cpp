@@ -4,10 +4,10 @@
 class Bst
 {
 public:
-	Node *root;
+	Node* root;
 	Bst();
 
-	Node insert(Node *node);
+	Node insert(int val);
 	Node search(int val);
 	Node findMax();
 	Node findMin();
