@@ -63,7 +63,12 @@ Node Bst::search(int val) {
 			return *x;
 		}
 	}
-	return *y;
+	if (y != NULL) {
+		return *y;
+	}
+	else {
+		return *new Node(NULL, -1);
+	}
 }
 
 Node Bst::findMax() {
@@ -100,6 +105,10 @@ int main() {
 	tree.insert(1);
 	tree.insert(20);
 	cout << "Elements in tree: " << tree.fetchNumElements(tree.root) << endl;
+	cout << "Largest element: " << tree.findMax().val << endl;
+	cout << "Smallest element: " << tree.findMin().val << endl;
+	cout << "Element found: " << tree.search(3).val << endl;
+	cout << "Not found: " << tree.search(100).val << endl;
 	cin.get();
 	return 0;
 }
