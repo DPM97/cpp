@@ -1,5 +1,7 @@
 #pragma once
 #include "node.h"
+#include <string>
+using namespace std;
 
 class singly_linked
 {
@@ -10,6 +12,9 @@ public:
 	bool add(int val);
 	node removeTail();
 	node removeHead();
+	node getElementByIndex(int index);
+	node getElementByValue(int val);
+	string printList();
 	~singly_linked();
 };
 

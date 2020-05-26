@@ -1,0 +1,4 @@
+﻿  doubly_linked.cpp
+c:\users\dylan\cpp\linked-list\linked-list\doubly_linked.cpp(9): warning C4101: 'tail': unreferenced local variable
+c:\users\dylan\cpp\linked-list\linked-list\doubly_linked.cpp(8): warning C4101: 'head': unreferenced local variable
+  linked-list.vcxproj -> C:\Users\Dylan\cpp\linked-list\Debug\linked-list.exe

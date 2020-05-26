@@ -2,19 +2,20 @@
 #include <iostream>
 
 node::node() {
-	node *last;
-	node *next;
+	node last;
+	node next;
 	int val;
 }
 
 
-node::node(int val) {
-	node *last = nullptr;
-	node *next = nullptr;
-	int val = val;
+node::node(int value) {
+	last = NULL;
+	next = NULL;
+	val = value;
 }
 
 node::~node() {
-	node *last = NULL;
-	node *next = NULL;
+	last = NULL;
+	next = NULL;
+	val = 0;
 }
