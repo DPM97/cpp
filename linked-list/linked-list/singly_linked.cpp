@@ -79,7 +79,7 @@ singly_linked::~singly_linked() {
 	node *tail = nullptr;
 }
 
-/*
+/* uncomment this & comment doubly-linked main to run singly-linked test
 int main() {
 	singly_linked linkedList;
 	linkedList.add(5);

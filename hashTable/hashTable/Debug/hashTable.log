@@ -1,0 +1,32 @@
+﻿  hashtable.cpp
+c:\users\dylan\cpp\hashtable\hashtable\hashtable.cpp(7): warning C4101: 'table': unreferenced local variable
+c:\users\dylan\cpp\hashtable\hashtable\hashtable.cpp(21): warning C4018: '<': signed/unsigned mismatch
+  singly_linked.cpp
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(9): warning C4101: 'tail': unreferenced local variable
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(8): warning C4101: 'head': unreferenced local variable
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(13): error C2440: 'initializing': cannot convert from 'node' to 'node *'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(13): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(16): error C2679: binary '=': no operator found which takes a right-hand operand of type 'node *' (or there is no acceptable conversion)
+  c:\users\dylan\cpp\hashtable\hashtable\node.h(13): note: could be 'node &node::operator =(const node &)'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(16): note: while trying to match the argument list '(node, node *)'
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(24): error C2679: binary '=': no operator found which takes a right-hand operand of type 'node *' (or there is no acceptable conversion)
+  c:\users\dylan\cpp\hashtable\hashtable\node.h(13): note: could be 'node &node::operator =(const node &)'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(24): note: while trying to match the argument list '(node, node *)'
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(30): error C2440: 'initializing': cannot convert from 'node' to 'node *'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(30): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(31): error C2446: '!=': no conversion from 'node *' to 'node **'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(31): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(34): error C2679: binary '=': no operator found which takes a right-hand operand of type 'node *' (or there is no acceptable conversion)
+  c:\users\dylan\cpp\hashtable\hashtable\node.h(13): note: could be 'node &node::operator =(const node &)'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(34): note: while trying to match the argument list '(node, node *)'
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(41): error C2440: 'initializing': cannot convert from 'node' to 'node *'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(41): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(42): error C2819: type 'node' does not have an overloaded member 'operator ->'
+  c:\users\dylan\cpp\hashtable\hashtable\node.h(4): note: see declaration of 'node'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(42): note: did you intend to use '.' instead?
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(42): error C2232: '->node::next': left operand has 'class' type, use '.'
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(47): error C2440: 'initializing': cannot convert from 'node' to 'node *'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(47): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(55): error C2440: 'initializing': cannot convert from 'node' to 'node *'
+  c:\users\dylan\cpp\hashtable\hashtable\singly_linked.cpp(55): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  Generating Code...
