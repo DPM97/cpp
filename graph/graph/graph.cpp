@@ -2,6 +2,7 @@
 #include <vector>;
 #include <iostream>;
 #include <map>;
+#include <string>;
 using namespace std;
 
 graph::graph() {
@@ -16,45 +17,53 @@ bool graph::addNode(int val) {
 			return false;
 		}
 	}
-	this->nodes->emplace_back(new node(val));
+	this->nodes->emplace_back(*(new node(val)));
 	return true;
 }
 
 /* add edge between two nodes */
 bool graph::addEdge(int node1, int node2, int weight) {
-	node *n1;
-	node *n2;
+	node n1, n2;
 	for (vector<node>::iterator it = this->nodes->begin(); it != this->nodes->end(); it++) {
 		if (it->key == node1) {
-			*n1 = *it;
+			n1 = *it;
 		}
 		else if (it->key == node2) {
-			*n2 = *it;
+			n2 = *it;
 		}
 	}
-	if (n1 == nullptr || n2 == nullptr) {
+
+	if (&n1 == nullptr || &n2 == nullptr) {
 		cout << "Cannot add an edge to a null node" << endl;
 		return false;
 	}
 	else {
 		/* update the weight if the edge already exists */
-		for (vector<edge>::iterator it = n1->edges->begin(); it != n1->edges->end(); it++) { 
-			if (it->end == n1 && it->start == n2) {
+		for (vector<edge>::iterator it = n1.edges->begin(); it != n1.edges->end(); it++) {
+			if (it->end->key == n1.key && it->start->key == n2.key) {
+				cout << "Weight: " << weight << endl;
 				it->weight = weight;
 				return true;
 			}
 		}
-
-		edge *newEdge = new edge(*n1, *n2, weight);
-		n1->edges->push_back(*newEdge);
+		cout << &n1.key << endl;
+		n1.edges->emplace_back(*(new edge(&n1, &n2, weight)));
 		return true;
 	}
 }
 
-vector<node> graph::getNeighbors(node *n1) {
-	vector<node> *neighbors = new vector<node>;
-	for (vector<edge>::iterator it = n1->edges->begin(); it != n1->edges->end(); it++) {
-		neighbors->push_back(*it->end);
+vector<int> graph::getNeighbors(int val) {
+	vector<int> *neighbors = new vector<int>;
+	node n1;
+	for (vector<node>::iterator it = nodes->begin(); it != nodes->end(); it++) {
+		if (it->key == val) {
+			n1 = *it;
+		}
+	}
+	cout << n1.key << endl;
+	for (vector<edge>::iterator it = n1.edges->begin(); it != n1.edges->end(); it++) {
+		cout << it->start->key << endl;
+		neighbors->push_back(it->end->key);
 	}
 	return *neighbors;
 }
@@ -101,11 +110,23 @@ int graph::dijkstra(int val) {
 	return 0;
 }
 
+string graph::printNodes() {
+	string str = "";
+	for (vector<node>::iterator it = this->nodes->begin(); it != this->nodes->end(); it++) {
+		str += (to_string(it->key) + " ");
+	}
+	return str;
+}
+
 int main() {
 	graph g;
 	g.addNode(10);
 	g.addNode(20);
+	cout << g.printNodes() << endl;
 	g.addEdge(10, 20, 100);
+	cout << g.getNeighbors(10).size() << endl;
+	cin.get();
+	return 0;
 }
 
 graph::~graph() {

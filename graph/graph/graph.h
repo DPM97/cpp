@@ -1,5 +1,6 @@
 #pragma once
 #include "node.h";
+#include <string>;
 using namespace std;
 class graph
 {
@@ -10,8 +11,9 @@ public:
 	graph();
 	~graph();
 	bool addEdge(int n1, int n2, int weight);
-	vector<node> getNeighbors(node *n1);
+	vector<int> getNeighbors(int val);
 	int dijkstra(int val);
 	bool addNode(int val);
+	string printNodes();
 };
 

@@ -3,6 +3,7 @@
 #include <vector>;
 using namespace std;
 
+class edge;
 class node
 {
 public:

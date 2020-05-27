@@ -1,6 +1,7 @@
 #pragma once
 #include "node.h";
 using namespace std;
+class node;
 class edge
 {
 public:
