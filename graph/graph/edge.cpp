@@ -1,5 +1,5 @@
-#include "edge.h"
-#include "node.h"
+#include "edge.h";
+#include <iostream>;
 using namespace std;
 
 edge::edge() {
@@ -8,7 +8,7 @@ edge::edge() {
 	weight = NULL;
 }
 
-edge::edge(node start, node end, int weight) {
+edge::edge(node *start, node *end, int weight) {
 	start = start;
 	end = end;
 	weight = weight;

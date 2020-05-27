@@ -1,7 +1,7 @@
-#include "graph.h"
-#include <vector>
-#include <iostream>
-#include <map>
+#include "graph.h";
+#include <vector>;
+#include <iostream>;
+#include <map>;
 using namespace std;
 
 graph::graph() {

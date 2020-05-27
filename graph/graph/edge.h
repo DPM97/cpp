@@ -1,15 +1,14 @@
 #pragma once
-using namespace std;
-#include <vector>;
 #include "node.h";
+using namespace std;
 class edge
 {
 public:
 	edge();
+	edge(node *start, node *end, int weight);
 	node *start;
 	node *end;
 	int weight;
-	edge(node start, node end, int weight);
 	~edge();
 };
 

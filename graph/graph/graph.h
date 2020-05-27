@@ -1,8 +1,6 @@
 #pragma once
-using namespace std;
-#include <vector>;
 #include "node.h";
-#include "edge.h";
+using namespace std;
 class graph
 {
 public:

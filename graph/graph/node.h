@@ -1,8 +1,7 @@
 #pragma once
-using namespace std;
-#include <vector>;
 #include "edge.h";
-#include <iostream>
+#include <vector>;
+using namespace std;
 
 class node
 {
@@ -11,6 +10,7 @@ public:
 	vector<edge> *edges;
 	int dist;
 	node *pred;
+	node();
 	node(int data);
 	~node();
 };

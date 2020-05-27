@@ -1,8 +1,14 @@
 #include "node.h";
-#include "edge.h";
 #include <vector>;
-#include <iostream>
+#include <iostream>;
 using namespace std;
+
+node::node() {
+	key = NULL;
+	dist = NULL;
+	pred = nullptr;
+	edges = nullptr;
+}
 
 node::node(int data) {
 	key = data;
