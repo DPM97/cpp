@@ -1,0 +1,55 @@
+﻿  edge.cpp
+c:\users\dylan\cpp\graph\graph\edge.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(11): error C2065: 'edge': undeclared identifier
+c:\users\dylan\cpp\graph\graph\node.h(11): error C2923: 'std::vector': 'edge' is not a valid template type argument for parameter '_Ty'
+c:\users\dylan\cpp\graph\graph\node.h(11): error C2903: 'allocator': symbol is neither a class template nor a function template
+c:\users\dylan\cpp\graph\graph\node.h(11): error C3203: 'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
+  graph.cpp
+c:\users\dylan\cpp\graph\graph\graph.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\graph.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(9): error C2143: syntax error: missing ';' before '*'
+c:\users\dylan\cpp\graph\graph\edge.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\dylan\cpp\graph\graph\edge.h(9): error C2238: unexpected token(s) preceding ';'
+c:\users\dylan\cpp\graph\graph\edge.h(10): error C2143: syntax error: missing ';' before '*'
+c:\users\dylan\cpp\graph\graph\edge.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\dylan\cpp\graph\graph\edge.h(10): error C2238: unexpected token(s) preceding ';'
+c:\users\dylan\cpp\graph\graph\edge.h(12): error C2061: syntax error: identifier 'node'
+c:\users\dylan\cpp\graph\graph\edge.h(12): error C2535: 'edge::edge(void)': member function already defined or declared
+  c:\users\dylan\cpp\graph\graph\edge.h(8): note: see declaration of 'edge::edge'
+c:\users\dylan\cpp\graph\graph\graph.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\graph.cpp(42): error C2039: 'end': is not a member of 'edge'
+  c:\users\dylan\cpp\graph\graph\edge.h(5): note: see declaration of 'edge'
+c:\users\dylan\cpp\graph\graph\graph.cpp(42): error C2039: 'start': is not a member of 'edge'
+  c:\users\dylan\cpp\graph\graph\edge.h(5): note: see declaration of 'edge'
+c:\users\dylan\cpp\graph\graph\graph.cpp(48): error C2661: 'edge::edge': no overloaded function takes 3 arguments
+c:\users\dylan\cpp\graph\graph\graph.cpp(57): error C2039: 'end': is not a member of 'edge'
+  c:\users\dylan\cpp\graph\graph\edge.h(5): note: see declaration of 'edge'
+c:\users\dylan\cpp\graph\graph\graph.cpp(82): error C2039: 'end': is not a member of 'edge'
+  c:\users\dylan\cpp\graph\graph\edge.h(5): note: see declaration of 'edge'
+c:\users\dylan\cpp\graph\graph\graph.cpp(82): error C2512: 'node': no appropriate default constructor available
+  c:\users\dylan\cpp\graph\graph\node.h(7): note: see declaration of 'node'
+  node.cpp
+c:\users\dylan\cpp\graph\graph\node.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\edge.h(9): error C2143: syntax error: missing ';' before '*'
+c:\users\dylan\cpp\graph\graph\edge.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\dylan\cpp\graph\graph\edge.h(9): error C2238: unexpected token(s) preceding ';'
+c:\users\dylan\cpp\graph\graph\edge.h(10): error C2143: syntax error: missing ';' before '*'
+c:\users\dylan\cpp\graph\graph\edge.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\dylan\cpp\graph\graph\edge.h(10): error C2238: unexpected token(s) preceding ';'
+c:\users\dylan\cpp\graph\graph\edge.h(12): error C2061: syntax error: identifier 'node'
+c:\users\dylan\cpp\graph\graph\edge.h(12): error C2535: 'edge::edge(void)': member function already defined or declared
+  c:\users\dylan\cpp\graph\graph\edge.h(8): note: see declaration of 'edge::edge'
+c:\users\dylan\cpp\graph\graph\node.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\dylan\cpp\graph\graph\node.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
